@@ -9,7 +9,7 @@ import Signup from './components/Signup'
 import Signin from './components/Signin'
 import  Blog from './components/Blog.jsx'
 import BlogCard from './components/Card.jsx'
-import Preview from './components/preview.jsx'
+import Preview from './components/Preview.jsx'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>

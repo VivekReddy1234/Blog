@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -34,7 +35,7 @@ app.get('/',async(req,res)=>{
         blog: allBlogs
     }); 
 })
-
-app.listen(8000,()=>{
+const port = process.env.PORT  || 9000;
+app.listen(port,()=>{
     console.log("Server started successfully");
 })

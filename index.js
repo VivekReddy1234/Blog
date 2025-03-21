@@ -12,9 +12,9 @@ const path = require("path");
 
 
 
-mongoose.connect('mongodb://localhost:27017/blog').then(()=>console.log("Database Connected")).catch((err)=> console.log('error',err));
+mongoose.connect(process.env.MONGO_URL).then(()=>console.log("Database Connected")).catch((err)=> console.log('error',err));
 app.use(cors({
-    origin: "http://localhost:5173", // Allow only your frontend origin
+    origin:  process.env.FRONTEND_URL || "http://localhost:5173", // Allow only your frontend origin
     credentials: true // Allow cookies and authentication headers
   }))
 app.use(express.urlencoded({extended: true}));

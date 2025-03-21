@@ -10,7 +10,7 @@ const Preview = ({ blog}) => {
    
   return (
     <div className="max-w-xs rounded-2xl overflow-hidden shadow-lg bg-white p-4">
-      <img className="w-full h-48 object-cover rounded-lg" src={`http://localhost:8000/${blog.coverImage}`} alt={blog.title} />
+      <img className="w-full h-48 object-cover rounded-lg" src={`https://blog-att9.onrender.com/${blog.coverImage}`} alt={blog.title} />
       <div className="mt-4 text-center">
         <h2 className="text-lg font-semibold text-gray-800">{blog.title}</h2>
         <Link 

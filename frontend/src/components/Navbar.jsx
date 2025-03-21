@@ -35,7 +35,7 @@ const DropDown = ({ userName }) => {
   const handleLogout = async () => {
     console.log("function approached");
     try {
-      const response = await fetch("http://localhost:8000/user/logout", {
+      const response = await fetch("https://blog-att9.onrender.com/user/logout", {
         method: "GET",
         credentials: "include", // Ensure cookies are sent with the request
       });

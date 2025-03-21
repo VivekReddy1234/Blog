@@ -17,7 +17,7 @@ const Blog = () => {
    useEffect(() => {
         const fetchUser = async () => {
           try {
-            const response = await fetch("http://localhost:8000/blog/", {
+            const response = await fetch("https://blog-att9.onrender.com/blog/", {
               method: "GET",
               credentials: "include", // Ensure cookies are sent with the request
             });

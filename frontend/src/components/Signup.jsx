@@ -24,7 +24,7 @@ const Signup = () => {
     e.preventDefault();
     try{
         console.log(formData);
-    const response = await fetch('http://localhost:8000/user/signup',{
+    const response = await fetch('https://blog-att9.onrender.com/user/signup',{
         method: "POST",
         headers: {
             "Content-Type": "application/json",
